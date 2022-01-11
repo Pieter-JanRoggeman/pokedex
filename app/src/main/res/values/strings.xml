@@ -5,4 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="pokedex">Pokédex</string>
     <string name="favorites">Favorites</string>
+    <string name="here_you_find_your_favorite_pokemon">Here you find your favorite Pokémon.</string>
+    <string name="about">About</string>
+    <string name="app_made_by_pj">App created by Pieter-Jan Roggeman</string>
 </resources>

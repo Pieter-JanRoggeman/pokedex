@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
 
-        //initUI()
+       // initUI()
 
         /**
         *val textView: TextView = binding.textHome

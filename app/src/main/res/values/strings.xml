@@ -1,14 +1,15 @@
 <resources>
     <string name="app_name">Pokedex</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_favorites">Favorites</string>
     <string name="title_about">About</string>
     <string name="pokedex">Pokédex</string>
     <string name="favorites">Favorites</string>
     <string name="here_you_find_your_favorite_pokemon">Here you find your favorite Pokémon.</string>
     <string name="about">About</string>
     <string name="app_made_by_pj">App created by Pieter-Jan Roggeman</string>
-
+    <string name="there_are_no_items_in_the_search_title">Não existe itens na busca!</string>
+    <string name="there_are_no_items_in_the_search_subtitle">Refaça a busca com um nome válido.</string>
     <string name="app_description">This Pokedex contains detailed stats for every creature from the Pokemon games.</string>
     <string name="fav_icon">Add to favorites</string>
     <string name="pokemon_image">Pokemon image</string>

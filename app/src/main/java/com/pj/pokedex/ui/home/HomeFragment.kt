@@ -8,8 +8,10 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.pj.pokedex.R
 import com.pj.pokedex.databinding.FragmentHomeBinding
+import com.pj.pokedex.ui.adapter.PokedexAdapter
 
 class HomeFragment : Fragment() {
 
@@ -31,15 +33,31 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
+        //initUI()
+
+        /**
+        *val textView: TextView = binding.textHome
+        *homeViewModel.text.observe(viewLifecycleOwner, Observer {
+        *    textView.text = it
+        })*/
         return root
+
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    private fun initUI(){
+        binding.pokemonList.layoutManager = LinearLayoutManager(this.context)
+        binding.pokemonList.adapter = PokedexAdapter()
+
+        homeViewModel.getPokemonList()
+
+        homeViewModel.pokemonList.observe(viewLifecycleOwner, Observer { list ->
+            (binding.pokemonList.adapter as PokedexAdapter).setData(list)
+        })
     }
 }

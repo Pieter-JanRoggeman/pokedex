@@ -15,3 +15,7 @@ Displaying and searching Pokémon, adding favorites, about tab on the applicatio
 - Glide
 - Gson
 - Picasso
+
+Api used:
+
+-https://pokeapi.co/

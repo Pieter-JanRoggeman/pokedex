@@ -1,6 +1,4 @@
-## <img src="https://i.ibb.co/5rYKb1c/Pokedex-Logo.png" style="zoom:25%;" />
-
-# Pokédex
+# ![](https://i.ibb.co/nMFHK6H/Pokedex-Logo-40-x-40-px.png)Pokédex
 
 **Pokédex project** made in **Kotlin** in Android Studio by Pieter-Jan Roggeman.
 Project is not finished yet.

@@ -67,6 +67,7 @@ class PokemonAdapter(
 
     private fun detail(url: String?, name: String, holder: PokemonViewHolder) {
         holder.layout_data.setOnClickListener {
+//            val favorite = getIsFavorite(name)
             url?.let { url -> onCallBackClickDetail?.invoke(url) }
         }
     }

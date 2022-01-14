@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pj.pokedex.R
 import com.pj.pokedex.databinding.FragmentHomeBinding
-import com.pj.pokedex.ui.adapter.PokedexAdapter
+import com.pj.pokedex.ui.adapter.PokemonAdapter
 
 class HomeFragment : Fragment() {
 
@@ -33,14 +33,6 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-
-       // initUI()
-
-        /**
-        *val textView: TextView = binding.textHome
-        *homeViewModel.text.observe(viewLifecycleOwner, Observer {
-        *    textView.text = it
-        })*/
         return root
 
     }
@@ -50,14 +42,5 @@ class HomeFragment : Fragment() {
         _binding = null
     }
 
-    private fun initUI(){
-        binding.pokemonList.layoutManager = LinearLayoutManager(this.context)
-        binding.pokemonList.adapter = PokedexAdapter()
 
-        homeViewModel.getPokemonList()
-
-        homeViewModel.pokemonList.observe(viewLifecycleOwner, Observer { list ->
-            (binding.pokemonList.adapter as PokedexAdapter).setData(list)
-        })
-    }
 }

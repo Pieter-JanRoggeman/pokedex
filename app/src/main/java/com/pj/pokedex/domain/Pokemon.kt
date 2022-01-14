@@ -135,7 +135,7 @@ data class Specie (
     val capture_rate: Int,
     val color: Default,
     val egg_groups: List<Default>,
-    val evolution_chain: DefaultUrl,
+    val evolution_chain: Default,
     val evolves_from_species: Default,
     val flavor_text_entries: List<FlavorText>,
     val forms_switchable: Boolean,

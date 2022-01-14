@@ -11,7 +11,6 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pj.pokedex.databinding.ActivityMainBinding
-import com.pj.pokedex.ui.adapter.PokedexAdapter
 import com.pj.pokedex.ui.home.HomeViewModel
 
 class MainActivity : AppCompatActivity() {

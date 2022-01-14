@@ -1,6 +1,5 @@
 package com.pj.pokedex.network
 
-import com.pj.pokedex.domain.PokemonInfo
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

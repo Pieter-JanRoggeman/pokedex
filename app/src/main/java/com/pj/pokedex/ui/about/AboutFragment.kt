@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -29,7 +30,7 @@ class AboutFragment : Fragment() {
 
         _binding = FragmentAboutBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
+        val image: ImageView = binding.imageView
         val textView: TextView = binding.textAbout
         aboutViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
